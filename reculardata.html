@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Regular form entry sheet </title>
+    </head>
+    <body>
+    <fieldset>
+        <legend> Regular entry form</legend>
+        <form name="RegEntryForm" method="post" action="reculardata.php">
+        <table> 
+        <tr>
+            <label for="Date"> Date </label>
+            <input type="date" name="Date" id="Date"> </tr>
+            <tr>
+            <div>
+            <label for="Disorder"> Disorder/s </label>
+                <input type="checkbox"  id="Diabetes" name="Diabetes" multiple>
+                    <lable for="Diabetes"> Diabetes </lable><br/> 
+                <input type="checkbox" id="Hypertension" name="Hypertension" multiple>
+                <label for="Hypertension"> Hypertension </label> <br/>
+                <input type="checkbox" id="BA" name="BA" multiple>
+                <label for="BA"> BA </label> <br/>
+                <input type="checkbox" id="COPD" name="COPD">
+                <label for="COPD"> COPD </label> <br/>
+                <input type="checkbox" id="Tyroid_disorders" name="Tytoid_disorders" multiple>
+                <label for="Tyroid_disorders"> Tyroid disorder </label> <br/>
+                <input type="checkbox" id="Dyslipidemia" name="Dyslipidemia">
+                <label for="Dyslipidemia"> Dyslipidemia </label> <br/>
+                <input type="checkbox" id="other" name="other" multiple>
+                <label for="other"> other </label> <br/>
+                </div> </tr>
+            <div> <tr> <label for="Wt"> Wt: </label> 
+            <input type="number" name="Wt" id="Wt">  </tr>
+            <tr> <label for="Ht"> Ht: </label>
+                <input type="number" name="Ht" id="Ht"> </tr> </div>
+            <div> <tr><label for="BMI"> BMI: </label>
+            <input type="number" name="BMI" id="BMI"> </tr>
+            <tr><label for="BP"> BP: </label>
+                <input type="number" name="BP" id="BP"> </tr></div>
+            <div><tr><label for="PR"> PR: </label>
+            <input type="number" name="PR" id="PR"> </tr>
+            <tr><label for="PEFR"> PEFR: </label>
+                <input type="number" name="PEFR" id="PEFR"> </tr> </div>
+<br> <br>
+                <tr>
+            <label for="Dass21"> Dass 21 score </label> 
+            <input type="text" id="DrugCompliance" name="DrugCompliance">
+        </tr> <br> 
+           <div> 
+                <label for="DrugCompliance" id="Drugcompliance" name="Drugcompliance"> Drug Compliance : </label>
+                <br>
+                <input type ="radio" name ="Good" id = "Good">
+                <label for ="Good"> Good </label> <br>
+                <input type="radio" id="Average" name="Average">
+                <label for ="Average"> Average </label> <br>
+                <input type="radio" id="Poor" name="Poor">
+                <label for = "Poor"> Poor </label>
+             </div>
+             <div>
+
+                <label for="ACTscore"> ACT score : </label>
+                <input type="number" id="ACTscore" name="ACTscore">
+             </div>
+             
+             <div>
+                <label for="CVD"> CVD risk % assesment : </label>
+                <input type="number" id="CVD" name="CVD">
+             </div>    
+            </table>
+            <table>
+                <p> <u> <b> LAST BLOOD REPORT </b></u></p>
+                <tr>
+                    <td>
+                        <b> <label for="FBS"> FBS : </label></b>
+                        <input type="number" id="FBS" name="FBS"> <br>
+                        <label for ="date" ><b> <u> Date :  </u></b></label>
+                        <input type="date" id="Date" name="Date">
+                    </td>
+                    <td>
+                        <b> <label for="TC"> T.C : </label></b>
+                        <input type="number" id="TC" name="TC"> <br>
+                        <label for ="date" ><b> <u> Date :  </u></b></label>
+                        <input type="date" id="DateTC" name="DateTC">
+                    </td>
+                    <td>
+                        <b> <label for="S.Cr"> S.Cr : </label></b>
+                        <input type="number" id="S.Cr" name="S.Cr"> <br>
+                        <label for ="date" ><b> <u> Date :  </u></b></label>
+                        <input type="date" id="DateS.Cr" name="DateS.Cr">
+                    </td>
+
+                </tr>
+            </table>
+        
+        </fieldset>
+        <p> <input type="submit" name="submit" id="submit" value="submit"> </p> </form>
+    </body>
+</html>
